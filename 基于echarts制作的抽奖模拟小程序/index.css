@@ -1,0 +1,39 @@
+﻿
+.btns {
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+}
+
+  .btns button{
+    cursor:pointer;
+  }
+
+  .chart-container {
+    width: 1000px;
+    height: 600px;
+    border: solid 1px #ccc;
+    margin:auto;
+  }
+
+#chart1{
+  width:100%;
+  height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
