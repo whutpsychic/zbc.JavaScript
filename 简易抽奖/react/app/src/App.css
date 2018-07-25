@@ -1,0 +1,134 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	border-collapse: collapse;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	background-color: gray;
+}
+
+.main-container {
+	margin: auto;
+	margin-top: 50px;
+	width: 1200px;
+	height: 800px;
+	border: solid 1px #fff;
+	background-color: orangered;
+}
+
+.top-section {
+	display: block;
+	margin: 20px;
+	height: 100px;
+	border: solid 1px #fff;
+	width: 1160px;
+}
+
+.contents {
+	display: block;
+	margin: 20px 20px;
+	height: 630px;
+	/*border: solid 1px #fff;*/
+}
+
+.left-section {
+	display: block;
+	height: 630px;
+	width: 800px;
+	float: left;
+	/*border: solid 1px #fff;*/
+}
+
+.top-bar {
+	margin: 10px;
+}
+
+	.top-bar select,
+	.top-bar option {
+		height: 35px;
+		font-size: 24px;
+		width: 120px;
+	}
+
+	.top-bar span {
+		font-size: 24px;
+	}
+
+.loading-part {
+	height: 450px;
+	border: solid 1px #fff;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+.selector {
+	font-size: 24px;
+	margin: 20px;
+	text-align: center;
+}
+
+	.selector select,
+	.selector option {
+		font-size: 24px;
+		width: 80px;
+		height: 35px;
+	}
+
+
+.right-section {
+	display: block;
+	height: 630px;
+	border: solid 1px #fff;
+	width: 340px;
+	margin-left: 820px;
+}
+
+.list-container {
+	height: 530px;
+	width: 100%;
+	border: solid 1px #fff;
+	overflow: auto;
+}
+
+.right-top {
+	font-size: 30px;
+	margin: 10px;
+}
+
+	.right-top span {
+		font-size: 30px;
+	}
+
+	.right-top + p {
+		font-size: 20px;
+		margin: 0 20px 10px 20px;
+	}
+
+.btn {
+	display: block;
+	cursor: pointer;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 2px;
+	background-color: orange;
+	font-size: 30px;
+	text-align: center;
+	margin: auto;
+}
+
+	.btn:hover {
+		background-color: pink;
+	}
+
+	.btn:active {
+		background-color: orangered;
+	}
