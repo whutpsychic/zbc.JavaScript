@@ -12,7 +12,7 @@ class Taker extends Component {
 	}
 
 	state = {
-		curr: "000",
+		//curr: "000",
 		running: false
 	}
 
@@ -27,7 +27,7 @@ class Taker extends Component {
     return (
       <div className="taker">
 				{
-					this.state.curr
+					this.props.v
 				}
       </div>
     );
