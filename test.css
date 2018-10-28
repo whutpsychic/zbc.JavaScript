@@ -1,0 +1,35 @@
+﻿
+div {
+  border: solid 1px #000;
+  min-width: 80px;
+  min-height: 80px;
+  background:#ccc;
+}
+
+
+.f1{
+  float:left;
+  height:300px;
+}
+
+.f2 {
+  float: left;
+  width:300px;
+}
+
+.r1 {
+  clear: both;
+  width: 300px;
+  float: left;
+  display: inline-block;
+}
+
+.r2 {
+  margin-left: 300px;
+  margin-top: 80px;
+  height: 300px;
+  width: 80px;
+}
+
+
+

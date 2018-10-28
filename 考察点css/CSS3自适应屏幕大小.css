@@ -1,0 +1,22 @@
+﻿
+
+#div {
+  /*width: 30%;
+  height: 0;
+  padding-bottom: 15%;
+  background: red;*/
+}
+
+
+#div {
+  position: fixed;
+  top: calc(50% - 50px);
+  width: 200px;
+  height: 100px;
+  left: calc(50% - 100px);
+  background: red;
+}
+
+
+
+

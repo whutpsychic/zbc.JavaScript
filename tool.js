@@ -101,7 +101,40 @@ function duplicateRemoval(arr) {
 }
 
 
+//获得一个随机字符串数组
+//num 获得多少个字符串
+//maxlength 单个字符串最大长度
+function getRandomStrs(num, maxlength) {
 
+  if (!maxlength) maxlength = 10;      //默认值为5
+
+  let arr = [];
+
+  //生成一个字符 code
+  //32 - 126
+  function createAChar() {
+    let ret = String.fromCharCode(32 + parseInt(Math.random()* (126 - 32), 10));
+    return ret;
+  }
+
+  //返回一个随机长度
+  function getRandomL() {
+    return parseInt(1 + Math.random() * (maxlength - 1), 10);
+  }
+
+  for (let i = 0; i < num; i++) {
+
+    let l = getRandomL();
+    let str = "";
+
+    for (let j = 0; j < l; j++) {
+      str += createAChar();
+    }
+    arr.push(str);
+  }
+
+  return arr;
+}
 
 
 

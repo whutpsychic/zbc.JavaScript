@@ -1,0 +1,61 @@
+﻿
+.container{
+  margin-bottom:20px;
+}
+
+div {
+  border: solid 1px #000;
+  min-width: 80px;
+  min-height: 80px;
+  background:#ccc;
+}
+
+.f1{
+  float:left;
+  height:300px;
+}
+
+.f2 {
+  float: left;
+  width:300px;
+}
+
+.r1 {
+  clear: both;
+  width: 300px;
+  float: left;
+}
+
+.r2 {
+  margin-left: 300px;
+  margin-top: 80px;
+  height: 300px;
+  width: 80px;
+}
+
+
+.container2 {
+  margin-bottom: 20px;
+}
+
+.ff1 {
+  float: left;
+  width: 300px;
+}
+
+.ff2 {
+  float:left;
+  height:300px;
+  clear:left;
+}
+
+.rr1 {
+  height: 300px;
+  width: 80px;
+  margin-left: 300px;
+}
+
+.rr2 {
+  width: 300px;
+  margin-left: 80px;
+}
