@@ -1,0 +1,47 @@
+﻿*{
+	margin:0;
+	padding:0;
+	position:relative;
+	border-color:#000;
+
+}
+
+div{
+	display:block;
+}
+
+h1{
+	text-align:center;
+}
+
+.container{
+	width:1178px;
+	height:778px;
+	border:solid 1px;
+	margin:10px auto;
+	padding:10px;
+}
+
+#chart1 {
+	height: 598px;
+	border: solid 1px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 111px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
