@@ -1,19 +1,41 @@
+//全局 promise 判断处理
 
-//如果 promise 没有.then后续声明或还没执行到.then的方法，则截止到该时刻这都是一个未完成的promise
+// Promise.all
+// Promise.race
 
-//创建一个已解决的promise
+let p1 = new Promise((resolve,reject)=>{
 
-let promise = Promise.resolve(42);		//这个promise对象是一个从一开始就已经是一个“已解决”的状态了
+	setTimout(()=>{
+		console.log("p1");
+		resolve(40)
+	},500)
+})
 
-promise.then((data)=>{
+let p2 = new Promise((resolve,reject)=>{
+
+	setTimout(()=>{
+		console.log("p2");
+		resolve(41)
+	},8000)
+})
+
+let p3 = new Promise((resolve,reject)=>{
+
+	setTimout(()=>{
+		console.log("p3");
+		resolve(42)
+	},1000)
+})
+
+let p4 = Promise.all(p1,p2,p3);
+
+p1.then((data)=>{
 	console.log(data)
 })
 
-//同理有创建一个未解决的promise
 
-let promise2 = Promise.reject(43);
 
-promise2.then(null,(data)=>{
-	console.log(data);
-})
+
+
+
 
