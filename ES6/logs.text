@@ -1,0 +1,30 @@
+
+2018-11-25
+
+使用babel来进行 ES6 => ES5代码转化
+
+npm i -D @babel/core @babel/preset-env @babel/cli 
+npm i -D @babel/plugin-transform-regenerator
+npm i -s @babel/runtime
+
+.babelrc 
+{
+	"presets": [
+	],
+	"plugins": [
+		["@babel/plugin-transform-regenerator", {
+			"asyncGenerators": true,
+			"generators": true,
+			"async": true
+		}],
+		"@babel/plugin-transform-runtime"
+	]
+}
+
+现在的 babel 改用插件式按需引入，不再polyfill一刀切
+
+2018-11-26
+
+由于编译后的代码仍然是 import ，须得引入webpack再加工，所以暂时放弃babel转码过程，直接实践es6
+
+

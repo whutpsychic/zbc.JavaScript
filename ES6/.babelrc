@@ -1,5 +1,6 @@
 {
 	"presets": [
+		"@babel/preset-es2015"
 	],
 	"plugins": [
 		["@babel/plugin-transform-regenerator", {
@@ -8,5 +9,6 @@
 			"async": true
 		}],
 		"@babel/plugin-transform-runtime"
+
 	]
 }
