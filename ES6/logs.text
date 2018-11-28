@@ -28,3 +28,61 @@ npm i -s @babel/runtime
 由于编译后的代码仍然是 import ，须得引入webpack再加工，所以暂时放弃babel转码过程，直接实践es6
 
 
+2018-11-27
+
+先执行 babel （到 import 的程度）再执行 webpack 的确可以实现转码，但只能支持到ie11
+
+----------------------
+
+2018-11-28 
+
+全面只使用 webpack 搭建 es6 转译测试环境
+
+在webpack里面设置babel-loader，但是babel-loader只能支持到webpack3，最新的4+不行
+
+在webpack.config.js的options里面配置和在.babelrc里面的配置都是可以生效的。
+
+屈服于 polyfill
+
+第一步 npm install
+
+-D  @babel/core,
+    @babel/preset-env,
+    babel-loader,
+    webpack@3,(因为官方目前只公布babel-loader对接到webpack第3版)
+    webpack-cli
+
+-s @babel/polyfill
+
+第二步 配置webpack.config.js
+
+module.exports = {
+	entry: ["@babel/polyfill",'./index.js'],
+	output: {
+		filename: 'bundle.js',
+		path: path.resolve(__dirname, 'dist')
+	},
+	module:{
+		rules:[
+		{
+			test:/\.js$/,
+			exclude: __dirname + 'node_modules',
+			use:{
+				loader:'babel-loader'
+			}
+		}
+		]
+	}
+};
+
+第三步 配置.babelrc
+
+{
+presets:["@babel/env"]
+}
+
+第四步 package.json 里面给"sscripts"字段添加一行 "build": "webpack"
+
+至此完成，而后可以通过命令来进行打包 npm run build
+
+此时可以完美兼容不止ES6的全新语法，还有新 API 如 Promise、function*、Array.from 等等
