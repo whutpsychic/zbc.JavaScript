@@ -25,8 +25,6 @@ let o = {
 	}
 }
 
-
-
 let i1 = zbc1();
 let i2 = zbc2();
 let i3 = zbc3();
