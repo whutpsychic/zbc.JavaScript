@@ -5,6 +5,13 @@ function* zbc1() {
 	yield 3;
 }
 
+function jk(){
+	console.log(111111)
+	console.log(987)
+}
+
+jk();
+
 function * zbc2() {
 	yield 1;
 	yield 2;

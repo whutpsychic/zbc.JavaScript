@@ -2,6 +2,7 @@
 /******/ 	function hotDisposeChunk(chunkId) {
 /******/ 		delete installedChunks[chunkId];
 /******/ 	}
+// ..............................................................
 /******/ 	var parentHotUpdateCallback = window["webpackHotUpdate"];
 /******/ 	window["webpackHotUpdate"] = 
 /******/ 	function webpackHotUpdateCallback(chunkId, moreModules) { // eslint-disable-line no-unused-vars
