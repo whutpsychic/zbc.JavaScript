@@ -8962,7 +8962,135 @@ function () {
 /* 278 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: SyntaxError: C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\index.js: Unexpected token, expected \";\" (28:7)\n\n\u001b[0m \u001b[90m 26 | \u001b[39m}\u001b[0m\n\u001b[0m \u001b[90m 27 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 | \u001b[39m\u001b[33m*\u001b[39mzbc5(){\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 | \u001b[39m\t\t\u001b[36myield\u001b[39m \u001b[35m1\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 | \u001b[39m\t\t\u001b[36myield\u001b[39m \u001b[35m2\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 | \u001b[39m\t\t\u001b[36myield\u001b[39m \u001b[35m3\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    at Parser.raise (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:4028:15)\n    at Parser.unexpected (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:5343:16)\n    at Parser.semicolon (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:5327:40)\n    at Parser.parseVarStatement (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:7729:10)\n    at Parser.parseStatementContent (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:7327:21)\n    at Parser.parseStatement (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:7277:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:7829:23)\n    at Parser.parseBlockBody (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:7816:10)\n    at Parser.parseTopLevel (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:7242:10)\n    at Parser.parse (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:8642:17)\n    at parse (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\parser\\lib\\index.js:10648:38)\n    at parser (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:170:34)\n    at normalizeFile (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:138:11)\n    at runSync (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\core\\lib\\transformation\\index.js:44:43)\n    at runAsync (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\core\\lib\\transformation\\index.js:35:14)\n    at process.nextTick (C:\\Users\\ZZM\\Documents\\GitHub\\zbc.JavaScript\\ES6\\node_modules\\@babel\\core\\lib\\transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+var _marked =
+/*#__PURE__*/
+regeneratorRuntime.mark(zbc1),
+    _marked2 =
+/*#__PURE__*/
+regeneratorRuntime.mark(zbc2),
+    _marked3 =
+/*#__PURE__*/
+regeneratorRuntime.mark(zbc3);
+
+function zbc1() {
+  return regeneratorRuntime.wrap(function zbc1$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return 1;
+
+        case 2:
+          _context.next = 4;
+          return 2;
+
+        case 4:
+          _context.next = 6;
+          return 3;
+
+        case 6:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked, this);
+}
+
+function zbc2() {
+  return regeneratorRuntime.wrap(function zbc2$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.next = 2;
+          return 1;
+
+        case 2:
+          _context2.next = 4;
+          return 2;
+
+        case 4:
+          _context2.next = 6;
+          return 3;
+
+        case 6:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  }, _marked2, this);
+}
+
+function zbc3() {
+  return regeneratorRuntime.wrap(function zbc3$(_context3) {
+    while (1) {
+      switch (_context3.prev = _context3.next) {
+        case 0:
+          _context3.next = 2;
+          return 1;
+
+        case 2:
+          _context3.next = 4;
+          return 2;
+
+        case 4:
+          _context3.next = 6;
+          return 3;
+
+        case 6:
+        case "end":
+          return _context3.stop();
+      }
+    }
+  }, _marked3, this);
+}
+
+var o = {
+  zbc4:
+  /*#__PURE__*/
+  regeneratorRuntime.mark(function zbc4() {
+    return regeneratorRuntime.wrap(function zbc4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            _context4.next = 2;
+            return 1;
+
+          case 2:
+            _context4.next = 4;
+            return 2;
+
+          case 4:
+            _context4.next = 6;
+            return 3;
+
+          case 6:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, zbc4, this);
+  })
+};
+var i1 = zbc1();
+var i2 = zbc2();
+var i3 = zbc3();
+var i4 = o.zbc4();
+console.log(i1.next());
+console.log(i1.next());
+console.log(i1.next());
+console.log(i1.next());
+console.log(i2.next());
+console.log(i2.next());
+console.log(i2.next());
+console.log(i2.next());
+console.log(i3.next());
+console.log(i3.next());
+console.log(i3.next());
+console.log(i3.next());
+console.log(i4.next());
+console.log(i4.next());
+console.log(i4.next());
+console.log(i4.next());
 
 /***/ })
 /******/ ]);
