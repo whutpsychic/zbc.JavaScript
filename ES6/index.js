@@ -1,62 +1,23 @@
+function run(td) {
+	let task = td();
 
-function* zbc1() {
-	yield 1;
-	yield 2;
-	yield 3;
-}
-
-function jk(){
-	console.log(111111)
-	console.log(987)
-}
-
-jk();
-
-function * zbc2() {
-	yield 1;
-	yield 2;
-	yield 3;
-}
-
-function *zbc3() {
-	yield 1;
-	yield 2;
-	yield 3;
-}
-
-let o = {
-	*zbc4() {
-		yield 1;
-		yield 2;
-		yield 3;
+	let result = task.next();
+	function step() {
+		if (!result.done) {
+			result = task.next(result.value);
+			step();
+		}
 	}
+
+	step();
 }
 
-let i1 = zbc1();
-let i2 = zbc2();
-let i3 = zbc3();
-let i4 = o.zbc4();
+function* zb() {
+	let v = yield 1;
+	console.log(v);
+	v = yield v + 2;
+	console.log(v);
+	yield 3;
+}
 
-console.log(i1.next());
-console.log(i1.next());
-console.log(i1.next());
-console.log(i1.next());
-
-console.log(i2.next());
-console.log(i2.next());
-console.log(i2.next());
-console.log(i2.next());
-
-console.log(i3.next());
-console.log(i3.next());
-console.log(i3.next());
-console.log(i3.next());
-
-console.log(i4.next());
-console.log(i4.next());
-console.log(i4.next());
-console.log(i4.next());
-
-
-
-
+run(zb);

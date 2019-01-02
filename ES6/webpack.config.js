@@ -6,8 +6,7 @@ module.exports = {
 	devServer: {
 		contentBase: path.join(__dirname, "dist"),
 		// hot:true,			//默认值为 true，所以可以不用设置
-		port: 9000,
-
+		port: 9000
 	},
 	output: {
 		filename: "bundle.js",
@@ -25,5 +24,11 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [new webpack.HotModuleReplacementPlugin()]
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.SourceMapDevToolPlugin({
+			filename: "[name].js.map",
+			fileContext: "./dist"
+		})
+	]
 };
